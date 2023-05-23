@@ -4,14 +4,11 @@
 
 from statistics import mean
 def get_list_info(lst):
-   # lst = list(range(4))
-    lst[0] = min(data[0]), max(data[0]), sum(data[0]), float(mean(data[0]))
-    lst[1] = min(data[1]), max(data[1]), sum(data[1]), float(mean(data[1]))
-    lst[2] = min(data[2]), max(data[2]), sum(data[2]), round(mean(data[2]), 2)
-    lst[3] = min(data[3]), max(data[3]), sum(data[3]), float(mean(data[3]))
-    del lst[4:7]
-    print(lst)
-    return lst
+    min_elem = min(lst)
+    max_elem = max(lst)
+    sum_list = sum(lst)
+    average = round(mean(lst), 2)
+    return min_elem, max_elem, sum_list, average
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
