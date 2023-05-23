@@ -2,12 +2,7 @@
 
 
 def even_sum(lst):
-    sum_list = list(range(4))
-    sum_list[0] = sum(data[0][0: :2])
-    sum_list[1] = sum(data[1][0::2])
-    sum_list[2] = sum(data[2][0::2])
-    sum_list[3] = sum(data[3][0::2])
-    print(sum_list)
+    sum_list = sum(lst[::2])
     return sum_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
