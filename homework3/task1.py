@@ -2,11 +2,7 @@
 # В исходном списке минимум 2 элемента.
 
 def modification(lst):
-    data[0].reverse()
-    if data[1][0] == 1:
-        data[1][0], data[1][4] = data[1][4], data[1][0]
-        data[2][0], data[2][3] = data[2][3], data[2][0]
-
+    lst[0], lst[-1] = lst[-1], lst[0]
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
